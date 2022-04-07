@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment, reset, set } from './store/counter.actions';
-import { selectCounter } from './store/counter.selector';
+import { decrement, increment, reset, set } from '../../store/counter/counter.actions';
+import { selectCounter } from '../../store/counter/counter.selector';
 
 export default function Counter() {
     const dispatch = useDispatch();

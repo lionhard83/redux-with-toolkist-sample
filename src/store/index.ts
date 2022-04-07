@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { counterReducer } from "./pages/counter/store/counter.reducer";
-import { favouritesReducer } from "./pages/favourites/store/favourites.reducer";
+import { counterReducer } from "./counter/counter.reducer";
+import { favouritesReducer } from "./favourites/favourites.reducer";
 
 const rootReducer = combineReducers({
   favourites: favouritesReducer,
@@ -13,3 +13,5 @@ export const store = configureStore({
 });
 
 export type RootState = ReturnType<typeof rootReducer>;
+
+export default store;

@@ -1,7 +1,7 @@
 import React, { FC, useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { add, remove } from './store/favourites.actions';
-import { selectFavourites } from './store/favourites.selector'
+import { add, remove } from '../../store/favourites/favourites.actions';
+import { selectFavourites } from '../../store/favourites/favourites.selector'
 const url = 'https://rickandmortyapi.com/api/character';
 
 type Character = {
