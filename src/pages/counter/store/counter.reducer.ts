@@ -1,4 +1,4 @@
-import { createReducer, PayloadAction } from "@reduxjs/toolkit";
+import { createReducer } from "@reduxjs/toolkit";
 import { decrement, increment, reset, set } from "./counter.actions";
 
 export const counterReducer = createReducer(0, (builder) =>

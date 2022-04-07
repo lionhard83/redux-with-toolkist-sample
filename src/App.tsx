@@ -3,7 +3,6 @@ import logo from './logo.svg';
 import './App.css';
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { Favourites } from './pages/favourites/Favourites';
-import Counter from './pages/counter/Counter';
 import { Provider } from 'react-redux';
 import { counterReducer } from './pages/counter/store/counter.reducer';
 import { favouritesReducer } from './pages/favourites/store/favourites.reducer';
